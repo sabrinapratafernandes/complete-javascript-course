@@ -39,26 +39,29 @@ console.log(ageJonas * 2, ageJonas/10, 2**3)
 const firstName = 'Jonas';
 const lasName = 'Schmedtmann';
 console.log(firstName + ' ' + lasName);
+*/
 
 // Assignment operators
-let x = 10 +5; // 15
+/*let x = 10 +5; // 15
 x += 10; // x = x + 10 = 25
 x *= 4; // x = x * 4 = 100
 x++ ; // x = x + 1
 x--;
 x--;
 console.log(x);
+*/
 
 // Comparison operators
-console.log(ageJonas > ageSarah);// >, <, >=, <=
+/*console.log(ageJonas > ageSarah);// >, <, >=, <=
 console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+*/
 
 // operator precedence
-const now = 2037;
+/*const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 
@@ -70,9 +73,10 @@ console.log(x,y);
 
 const averageAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, averageAge);
+*/
 
 // Coding challeng #1
-
+/*
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
@@ -83,9 +87,10 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
+*/
 
 // Strings and template Literals
-
+/*
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
@@ -100,7 +105,6 @@ console.log(jonasNew)
 console.log(`String
 multiple
 lines`)
-
 */
 
 // Taking Decisions: if / else statement
@@ -125,3 +129,38 @@ if (birthYear <= 2000 ) {
 }
 
 console.log(century)
+
+// Coding challeng #2
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+} else {
+    console.log(`John's BMI (${BMIJohn})is higher than Mark's (${BMIMark})!`);
+}
+
+
+// Type Conversion 
+
+ const inputYear = '1991';
+ console.log(Number(inputYear));
+ console.log(inputYear+18);
+
+ console.log(Number('Jonas'));
+ console.log(typeof NaN);
+
+ console.log(String(23), 23);
+
+ // Type Coercion
+
+ console.log('I am '+ 23 +' years old');
+ console.log('23' - '10' - 3);
+ console.log('23' / '2');
