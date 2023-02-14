@@ -257,8 +257,77 @@ if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 }
 
 
+// The switch statement
 
+const day = 'tuesday';
 
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        break;
+    case 'tuesday':
+        console.log('prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'tursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log('not a valid day');
+}
 
+// another option 
 
+if (day === 'monday') {
+    console.log('monday')
+} else if (day === 'tuesday') {
+    console.log('tuesday')
+} else if (day === 'wednesday' || day === 'tursday') {
+    
+}else if (day === 'friday') {
+    console.log('friday')
+}else if (day === 'saturday') {
+    console.log('saturday')
+}else if (day === 'sunday') {
+    console.log('sunday')
+}else {
+    console.log('not a valid day');
+}
+
+// Statements and expressions
+  // aula teorica
+
+// The conditional (ternary) operator
+
+const age = 23;
+//age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if (age >= 18){
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+// coding challenge
+
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`the bill was ${bill}, the tip was ${tip}, ande the total value ${bill + tip}`);
+
+// JavaScript Releases
+  // aula teórica 
 
